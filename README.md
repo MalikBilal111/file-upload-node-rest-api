@@ -30,5 +30,5 @@ POST /file/upload<br>
 This endpoint accepts a single file upload with the field name 'file'. If successful, it responds with a JSON message containing the filename of the uploaded file.
 
 ## Authors
-Bilal Asghar
+Bilal Asghar<br>
 Happy coding! 🚀
