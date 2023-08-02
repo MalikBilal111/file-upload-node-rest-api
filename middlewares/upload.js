@@ -5,13 +5,9 @@ const maxSize = 2 * 1024 * 1024;
 
 let storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, __basedir + "/public/payment_receipt");
+    cb(null, __basedir + "/public/uploads");
   },
   filename: (req, file, cb) => {
-    // const username = req.user; // Change this to match the location of the username in your request object
-    // const originalFileName = file.originalname;
-    // const fileExtension = originalFileName.split('.').pop();
-    // const newFileName = `${username}_${Date.now()}.${fileExtension}`;
     cb(null, file.originalname);
   },
 });
@@ -19,7 +15,7 @@ let storage = multer.diskStorage({
 let uploadFile = multer({
   storage: storage,
   limits: { fileSize: maxSize },
-}).single("payment_receipt");
+}).single("file");
 
 // create the exported middleware object
 let uploadFileMiddleware = util.promisify(uploadFile);

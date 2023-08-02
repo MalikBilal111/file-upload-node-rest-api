@@ -2,7 +2,7 @@ const apiResponse = require("../helpers/api-response");
 const uploadFile = require("../middlewares/upload");
 
 /**
- * Payment Receipt Upload
+ * Upload File
  * @param {file}      payment_receipt
  * @returns {string}
  */
@@ -23,7 +23,7 @@ exports.upload = [
         { path: req.file.path }
       );
     } catch (err) {
-      console.error("Error saving payment details:", err);
+      console.error("Error saving file:", err);
       return apiResponse.ErrorResponse(res, err);
     }
   },
