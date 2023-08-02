@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "imcinsti_imc_dev_user",
+    "password": "yIw[d8S}_xOS",
+    "database": "imcinsti_leadsdb",
+    "host": "localhost",
+    "dialect": "mysql",
+    "socketPath": "/Applications/MAMP/tmp/mysql/mysql.sock"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mssql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mssql"
+  }
+}
