@@ -19,8 +19,6 @@ Before running the API, ensure you have the following prerequisites installed:
 
 ## Installation
 
-1. Clone the repository:
-
 ```bash
 git clone https://github.com/MalikBilal111/file-upload-node-rest-api
 cd file-upload-api
@@ -28,7 +26,7 @@ npm install
 node index.js
 ```
 ## File Upload Endpoint
-POST /file/upload
+POST /file/upload<br>
 This endpoint accepts a single file upload with the field name 'file'. If successful, it responds with a JSON message containing the filename of the uploaded file.
 
 ## Authors
