@@ -26,7 +26,8 @@ npm install
 node index.js
 ```
 ## File Upload Endpoint
-POST /file/upload<br>
+POST /api/file/upload
+
 This endpoint accepts a single file upload with the field name 'file'. If successful, it responds with a JSON message containing the filename of the uploaded file.
 
 ## Authors
